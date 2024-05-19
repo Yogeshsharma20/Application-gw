@@ -1,0 +1,19 @@
+appgw = {
+  appgw_rg_name             = "rg-Application-gw"
+  appgw_location            = "centralindia"
+  appgw_vnet_name           = "vnet-Application-GW"
+  appgw_address_space       = ["10.254.0.0/16"]
+  appgw_subnet_name         = "subnet-Application-gw"
+  appgw_address_prefixes    = ["10.254.0.0/24"]
+  appgw_pip                 = "pip-Appilication-gw"
+  appgw_name                = "appgw-prod"
+  appgw_config_ip_name      = "ipconfig-appgw"
+  frontend_port_name        = "frontend-appgw"
+  frontend_port             = 80
+  frontend_ip_config_name   = "frontend-ipname"
+  backend_address_pool_name = "bkpool-app-gw"
+  http_setting_name         = "http-app-gw"
+  listener_name             = "listner-app-gw"
+  request_routing_rule_name = "lis-rule-app-gw"
+  routing_priority          = 9
+}
